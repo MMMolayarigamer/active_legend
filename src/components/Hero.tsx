@@ -4,7 +4,6 @@ import { PlayCircle, Heart, Download } from 'lucide-react';
 const Hero: React.FC = () => {
   return (
     <section className="relative min-h-screen flex items-center pt-16">
-      {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-t from-dark-darker via-dark-darker/90 to-dark-darker/70"></div>
         <img 
@@ -56,7 +55,6 @@ const Hero: React.FC = () => {
         </div>
       </div>
 
-      {/* Geometric shape inspired by AE logo */}
       <div className="absolute left-0 bottom-0 w-64 h-64 md:w-96 md:h-96 opacity-10">
         <div className="w-full h-full rounded-full border-4 border-primary"></div>
       </div>

@@ -42,7 +42,6 @@ const Header: React.FC = () => {
           <span className="mr-3 text-xl font-heading font-bold hidden sm:block">ایگیم</span>
         </a>
 
-        {/* Desktop Navigation */}
         <nav className="hidden md:block order-1 md:order-2">
           <ul className="flex space-x-6">
             <li><a href="#" className="nav-link active">خانه</a></li>
@@ -60,7 +59,6 @@ const Header: React.FC = () => {
           </a>
         </div>
 
-        {/* Mobile Navigation */}
         <div 
           className={`fixed inset-0 bg-dark-darker z-40 md:hidden transition-transform duration-300 ease-in-out ${
             isOpen ? 'translate-x-0' : '-translate-x-full'
