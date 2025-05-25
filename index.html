@@ -1,14 +1,88 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fa" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="ایگیم - یک تجربه بازی غوطه‌ور که مرزهای سرگرمی تعاملی را جابجا می‌کند." />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ایگیم - وارد دنیای فانتزی ما شوید</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
+</head>
+<body class="bg-dark-darker text-light font-body">
+    <header class="fixed w-full z-50 transition-all duration-300 bg-dark-darker shadow-lg py-2">
+        <div class="container">
+            <nav class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
+                        <span class="text-dark-darker font-heading font-extrabold text-xl">AE</span>
+                    </div>
+                    <span class="mr-3 text-xl font-heading font-bold">ایگیم</span>
+                </div>
+                
+                <ul class="hidden md:flex space-x-6">
+                    <li><a href="#" class="nav-link active">خانه</a></li>
+                    <li><a href="#about" class="nav-link">درباره بازی</a></li>
+                    <li><a href="#features" class="nav-link">ویژگی‌ها</a></li>
+                    <li><a href="#gallery" class="nav-link">گالری</a></li>
+                    <li><a href="#contact" class="nav-link">تماس با ما</a></li>
+                </ul>
+
+                <button class="btn btn-primary hidden md:flex items-center">
+                    <span>دانلود دمو</span>
+                    <svg class="mr-2 h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+                        <path d="m9 12 2 2 4-4"/>
+                    </svg>
+                </button>
+
+                <button class="md:hidden menu-toggle">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-16 6h16"/>
+                    </svg>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero relative min-h-screen flex items-center pt-16">
+            <div class="absolute inset-0 z-0">
+                <div class="absolute inset-0 bg-gradient-to-t from-dark-darker via-dark-darker/90 to-dark-darker/70"></div>
+                <img src="https://images.pexels.com/photos/7915575/pexels-photo-7915575.jpeg" alt="تصویر پس‌زمینه بازی" class="w-full h-full object-cover">
+            </div>
+
+            <div class="container relative z-10">
+                <div class="max-w-3xl">
+                    <h1 class="text-primary mb-6 uppercase tracking-wide">
+                        ایگیم
+                        <span class="block text-light text-4xl mt-2">وارد دنیای فانتزی ما شوید</span>
+                    </h1>
+                    
+                    <p class="text-light-dark text-xl mb-8">
+                        یک تجربه اکشن-ماجراجویی غوطه‌ور که مهارت‌ها و تخیل شما را به چالش می‌کشد.
+                        دنیاهای وسیع را کشف کنید، با دشمنان قدرتمند مبارزه کنید و رازهای یک تمدن باستانی را کشف کنید.
+                    </p>
+
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#" class="btn btn-primary">تماشای تریلر</a>
+                        <a href="#" class="btn btn-outline">دانلود دمو</a>
+                        <a href="#" class="btn btn-outline">افزودن به علاقه‌مندی‌ها</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- سایر بخش‌ها مانند About, Features, Gallery و Contact اینجا قرار می‌گیرند -->
+    </main>
+
+    <footer class="bg-dark pt-16 pb-8">
+        <div class="container">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <!-- محتوای فوتر -->
+            </div>
+            <div class="border-t border-dark-lighter pt-8 text-center">
+                <p class="text-light-dark">© 2025 ایگیم. تمامی حقوق محفوظ است.</p>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>
