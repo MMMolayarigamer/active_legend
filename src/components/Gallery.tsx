@@ -3,7 +3,7 @@ import { ChevronLeft, ChevronRight, X, Play } from 'lucide-react';
 
 const images = [
   {
-    src: "https://images.pexels.com/photos/3165335/pexels-photo-3165335.jpeg",
+    src: "https://1drv.ms/i/c/dcda3a3b5e9bb46d/EXWZYo8aF3hBkbkv17bzyIkBPNtCWPKDeOHOOkUN_zDwCw?e=XH1KWX",
     alt: "Game screenshot 1"
   },
   {
