@@ -29,21 +29,15 @@ const Header: React.FC = () => {
       }`}
     >
       <div className="container flex justify-between items-center">
-        <div className="md:hidden">
-          <button className="text-light" onClick={toggleMenu}>
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
-        </div>
-
-        <a href="#" className="flex items-center order-2 md:order-1">
-          <div className="relative w-10 h-10 md:w-12 md:h-12 bg-primary rounded-full flex items-center justify-center">
-            <span className="text-dark-darker font-heading font-extrabold text-lg md:text-xl">AL</span>
+        <a href="#" className="flex items-center">
+          <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
+            <span className="text-dark-darker font-bold text-xl">AL</span>
           </div>
-          <span className="mr-3 text-xl font-heading font-bold hidden sm:block">اکتیو لجندز</span>
+          <span className="mr-3 text-xl font-bold">اکتیو لجندز</span>
         </a>
 
-        <nav className="hidden md:block order-1 md:order-2">
-          <ul className="flex space-x-6">
+        <nav className={`hidden md:block ${isOpen ? 'block' : ''}`}>
+          <ul className="flex space-x-8">
             <li><a href="#" className="nav-link active">خانه</a></li>
             <li><a href="#about" className="nav-link">درباره بازی</a></li>
             <li><a href="#features" className="nav-link">ویژگی‌ها</a></li>
@@ -52,29 +46,34 @@ const Header: React.FC = () => {
           </ul>
         </nav>
 
-        <div className="hidden md:block order-3">
-          <a href="#" className="btn btn-primary flex items-center">
-            <span>دانلود بازی</span>
+        <div className="flex items-center">
+          <a href="#" className="btn btn-primary hidden md:flex">
+            دانلود بازی
             <Gamepad2 className="mr-2 h-5 w-5" />
           </a>
+          <button className="md:hidden" onClick={toggleMenu}>
+            {isOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
         </div>
 
-        <div 
-          className={`fixed inset-0 bg-dark-darker z-40 md:hidden transition-transform duration-300 ease-in-out ${
-            isOpen ? 'translate-x-0' : '-translate-x-full'
-          }`}
-        >
-          <div className="container py-20">
-            <ul className="flex flex-col space-y-6">
-              <li><a href="#" className="text-xl nav-link active" onClick={toggleMenu}>خانه</a></li>
-              <li><a href="#about" className="text-xl nav-link" onClick={toggleMenu}>درباره بازی</a></li>
-              <li><a href="#features" className="text-xl nav-link" onClick={toggleMenu}>ویژگی‌ها</a></li>
-              <li><a href="#gallery" className="text-xl nav-link" onClick={toggleMenu}>گالری</a></li>
-              <li><a href="#contact" className="text-xl nav-link" onClick={toggleMenu}>تماس با ما</a></li>
+        {/* Mobile Menu */}
+        <div className={`md:hidden fixed inset-0 bg-dark-darker z-50 transform ${isOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out`}>
+          <div className="container p-6">
+            <div className="flex justify-end">
+              <button onClick={toggleMenu}>
+                <X size={24} />
+              </button>
+            </div>
+            <ul className="flex flex-col space-y-6 mt-10">
+              <li><a href="#" className="nav-link active" onClick={toggleMenu}>خانه</a></li>
+              <li><a href="#about" className="nav-link" onClick={toggleMenu}>درباره بازی</a></li>
+              <li><a href="#features" className="nav-link" onClick={toggleMenu}>ویژگی‌ها</a></li>
+              <li><a href="#gallery" className="nav-link" onClick={toggleMenu}>گالری</a></li>
+              <li><a href="#contact" className="nav-link" onClick={toggleMenu}>تماس با ما</a></li>
             </ul>
             <div className="mt-8">
-              <a href="#" className="btn btn-primary flex items-center justify-center">
-                <span>دانلود بازی</span>
+              <a href="#" className="btn btn-primary w-full flex justify-center items-center">
+                دانلود بازی
                 <Gamepad2 className="mr-2 h-5 w-5" />
               </a>
             </div>
