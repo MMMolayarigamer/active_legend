@@ -16,15 +16,15 @@ const Hero: React.FC = () => {
       <div className="container relative z-10">
         <div className="max-w-3xl">
           <h1 className="text-primary mb-6 uppercase tracking-wide">
-            ایگیم
+            اکتیو لجندز
             <span className="block text-light text-2xl md:text-3xl lg:text-4xl mt-2">
-              وارد دنیای فانتزی ما شوید
+              به دنیای قهرمانان خوش آمدید
             </span>
           </h1>
           
           <p className="text-light-dark text-lg md:text-xl mb-8">
-            یک تجربه اکشن-ماجراجویی غوطه‌ور که مهارت‌ها و تخیل شما را به چالش می‌کشد.
-            دنیاهای وسیع را کشف کنید، با دشمنان قدرتمند مبارزه کنید و رازهای یک تمدن باستانی را کشف کنید.
+            یک بازی اکشن هیجان‌انگیز با قهرمانان منحصر به فرد و مبارزات نفس‌گیر.
+            با دوستان خود تیم تشکیل دهید و در نبردهای حماسی شرکت کنید.
           </p>
 
           <div className="flex flex-wrap gap-4">
@@ -33,7 +33,7 @@ const Hero: React.FC = () => {
               <PlayCircle className="mr-2 h-5 w-5" />
             </a>
             <a href="#" className="btn btn-outline flex items-center">
-              <span>دانلود دمو</span>
+              <span>دانلود بازی</span>
               <Download className="mr-2 h-5 w-5" />
             </a>
             <a href="#" className="btn btn-outline flex items-center">

@@ -37,9 +37,9 @@ const Header: React.FC = () => {
 
         <a href="#" className="flex items-center order-2 md:order-1">
           <div className="relative w-10 h-10 md:w-12 md:h-12 bg-primary rounded-full flex items-center justify-center">
-            <span className="text-dark-darker font-heading font-extrabold text-lg md:text-xl">AE</span>
+            <span className="text-dark-darker font-heading font-extrabold text-lg md:text-xl">AL</span>
           </div>
-          <span className="mr-3 text-xl font-heading font-bold hidden sm:block">ایگیم</span>
+          <span className="mr-3 text-xl font-heading font-bold hidden sm:block">اکتیو لجندز</span>
         </a>
 
         <nav className="hidden md:block order-1 md:order-2">
@@ -54,7 +54,7 @@ const Header: React.FC = () => {
 
         <div className="hidden md:block order-3">
           <a href="#" className="btn btn-primary flex items-center">
-            <span>دانلود دمو</span>
+            <span>دانلود بازی</span>
             <Gamepad2 className="mr-2 h-5 w-5" />
           </a>
         </div>
@@ -74,7 +74,7 @@ const Header: React.FC = () => {
             </ul>
             <div className="mt-8">
               <a href="#" className="btn btn-primary flex items-center justify-center">
-                <span>دانلود دمو</span>
+                <span>دانلود بازی</span>
                 <Gamepad2 className="mr-2 h-5 w-5" />
               </a>
             </div>

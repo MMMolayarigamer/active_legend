@@ -8,39 +8,39 @@ const About: React.FC = () => {
         <div className="flex flex-col md:flex-row gap-12 items-center">
           <div className="md:w-1/2">
             <h2 className="relative">
-              <span className="inline-block text-primary uppercase font-bold text-sm tracking-wider mb-2">Discover</span>
-              <span className="block">About AEGAME</span>
+              <span className="inline-block text-primary uppercase font-bold text-sm tracking-wider mb-2">کشف کنید</span>
+              <span className="block">درباره اکتیو لجندز</span>
               <div className="h-1 w-24 bg-primary mt-4"></div>
             </h2>
             
             <p className="my-6">
-              AEGAME is an epic action-adventure that takes place in a vast, interconnected 
-              world filled with danger and discovery. Players will embark on a journey to uncover 
-              the secrets of an ancient civilization while mastering combat, traversal, and puzzle-solving.
+              اکتیو لجندز یک بازی اکشن چند نفره است که در آن بازیکنان با انتخاب قهرمانان منحصر به فرد
+              در نبردهای تیمی هیجان‌انگیز شرکت می‌کنند. هر قهرمان دارای توانایی‌های خاص و سبک بازی
+              منحصر به فرد خود است.
             </p>
             
             <p className="mb-6">
-              With stunning visuals, an emotional narrative, and responsive gameplay, AEGAME 
-              offers a gaming experience that will captivate both casual and hardcore gamers alike.
-              The world reacts to your choices, creating a unique adventure for every player.
+              با گرافیک خیره‌کننده، گیم‌پلی روان و سیستم مبارزه عمیق، اکتیو لجندز تجربه‌ای
+              فراموش‌نشدنی را برای همه بازیکنان فراهم می‌کند. انتخاب‌های شما در بازی تأثیرگذار
+              است و هر مسابقه یک تجربه منحصر به فرد خواهد بود.
             </p>
             
             <div className="grid grid-cols-2 gap-4 mt-8">
               <div className="flex items-center">
                 <Gamepad className="text-primary mr-3 h-6 w-6" />
-                <span>Intuitive Controls</span>
+                <span>کنترل روان</span>
               </div>
               <div className="flex items-center">
                 <Swords className="text-primary mr-3 h-6 w-6" />
-                <span>Deep Combat</span>
+                <span>مبارزات عمیق</span>
               </div>
               <div className="flex items-center">
                 <Mountain className="text-primary mr-3 h-6 w-6" />
-                <span>Open World</span>
+                <span>نقشه‌های متنوع</span>
               </div>
               <div className="flex items-center">
                 <Stars className="text-primary mr-3 h-6 w-6" />
-                <span>Epic Story</span>
+                <span>قهرمانان حماسی</span>
               </div>
             </div>
           </div>
@@ -49,19 +49,17 @@ const About: React.FC = () => {
             <div className="aspect-video rounded-lg overflow-hidden shadow-xl border border-dark-lighter relative">
               <img 
                 src="https://images.pexels.com/photos/7915520/pexels-photo-7915520.jpeg" 
-                alt="Game screenshot" 
+                alt="تصویر بازی" 
                 className="w-full h-full object-cover"
               />
               
-              {/* Geometric accent inspired by AE logo */}
               <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-primary/10 rounded-full border border-primary z-10"></div>
             </div>
             
-            {/* Second image with offset */}
             <div className="aspect-video rounded-lg overflow-hidden shadow-xl border border-dark-lighter absolute -top-8 -right-8 z-0 opacity-50 w-4/5">
               <img 
                 src="https://images.pexels.com/photos/7915251/pexels-photo-7915251.jpeg" 
-                alt="Game screenshot" 
+                alt="تصویر بازی" 
                 className="w-full h-full object-cover"
               />
             </div>

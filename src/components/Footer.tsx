@@ -11,12 +11,12 @@ const Footer: React.FC = () => {
           <div>
             <a href="#" className="flex items-center mb-6">
               <div className="relative w-10 h-10 bg-primary rounded-full flex items-center justify-center">
-                <span className="text-dark-darker font-heading font-extrabold text-lg">AE</span>
+                <span className="text-dark-darker font-heading font-extrabold text-lg">AL</span>
               </div>
-              <span className="ml-3 text-xl font-heading font-bold">AEGAME</span>
+              <span className="ml-3 text-xl font-heading font-bold">اکتیو لجندز</span>
             </a>
             <p className="text-light-dark mb-6">
-              An immersive gaming experience that pushes the boundaries of what's possible in interactive entertainment.
+              یک تجربه بازی غوطه‌ور که مرزهای سرگرمی تعاملی را جابجا می‌کند.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-light-dark hover:text-primary transition-colors duration-300">
@@ -43,36 +43,36 @@ const Footer: React.FC = () => {
           </div>
           
           <div>
-            <h4 className="text-lg font-bold mb-6">Quick Links</h4>
+            <h4 className="text-lg font-bold mb-6">لینک‌های سریع</h4>
             <ul className="space-y-3">
-              <li><a href="#" className="text-light-dark hover:text-primary transition-colors duration-300">Home</a></li>
-              <li><a href="#about" className="text-light-dark hover:text-primary transition-colors duration-300">About Game</a></li>
-              <li><a href="#features" className="text-light-dark hover:text-primary transition-colors duration-300">Features</a></li>
-              <li><a href="#gallery" className="text-light-dark hover:text-primary transition-colors duration-300">Media</a></li>
-              <li><a href="#contact" className="text-light-dark hover:text-primary transition-colors duration-300">Contact</a></li>
+              <li><a href="#" className="text-light-dark hover:text-primary transition-colors duration-300">خانه</a></li>
+              <li><a href="#about" className="text-light-dark hover:text-primary transition-colors duration-300">درباره بازی</a></li>
+              <li><a href="#features" className="text-light-dark hover:text-primary transition-colors duration-300">ویژگی‌ها</a></li>
+              <li><a href="#gallery" className="text-light-dark hover:text-primary transition-colors duration-300">گالری</a></li>
+              <li><a href="#contact" className="text-light-dark hover:text-primary transition-colors duration-300">تماس با ما</a></li>
             </ul>
           </div>
           
           <div>
-            <h4 className="text-lg font-bold mb-6">Resources</h4>
+            <h4 className="text-lg font-bold mb-6">منابع</h4>
             <ul className="space-y-3">
-              <li><a href="#" className="text-light-dark hover:text-primary transition-colors duration-300">System Requirements</a></li>
-              <li><a href="#" className="text-light-dark hover:text-primary transition-colors duration-300">Game Wiki</a></li>
-              <li><a href="#" className="text-light-dark hover:text-primary transition-colors duration-300">Community Forum</a></li>
-              <li><a href="#" className="text-light-dark hover:text-primary transition-colors duration-300">Support Center</a></li>
-              <li><a href="#" className="text-light-dark hover:text-primary transition-colors duration-300">Privacy Policy</a></li>
+              <li><a href="#" className="text-light-dark hover:text-primary transition-colors duration-300">نیازمندی‌های سیستم</a></li>
+              <li><a href="#" className="text-light-dark hover:text-primary transition-colors duration-300">ویکی بازی</a></li>
+              <li><a href="#" className="text-light-dark hover:text-primary transition-colors duration-300">انجمن</a></li>
+              <li><a href="#" className="text-light-dark hover:text-primary transition-colors duration-300">پشتیبانی</a></li>
+              <li><a href="#" className="text-light-dark hover:text-primary transition-colors duration-300">حریم خصوصی</a></li>
             </ul>
           </div>
           
           <div>
-            <h4 className="text-lg font-bold mb-6">Newsletter</h4>
+            <h4 className="text-lg font-bold mb-6">خبرنامه</h4>
             <p className="text-light-dark mb-4">
-              Subscribe to get updates about game releases, events, and exclusive content.
+              برای دریافت آخرین اخبار، رویدادها و محتوای انحصاری در خبرنامه ما عضو شوید.
             </p>
             <form className="flex mb-4">
               <input
                 type="email"
-                placeholder="Your email"
+                placeholder="ایمیل شما"
                 className="w-full px-4 py-2 bg-dark border border-dark-lighter rounded-l-md focus:outline-none focus:ring-2 focus:ring-primary text-light"
               />
               <button
@@ -83,7 +83,7 @@ const Footer: React.FC = () => {
               </button>
             </form>
             <p className="text-light-dark text-sm">
-              By subscribing, you agree to our Terms of Service and Privacy Policy.
+              با عضویت، شما شرایط استفاده و حریم خصوصی ما را می‌پذیرید.
             </p>
           </div>
         </div>
@@ -91,15 +91,15 @@ const Footer: React.FC = () => {
         <div className="border-t border-dark-lighter pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-light-dark text-sm mb-4 md:mb-0">
-              © {currentYear} AEGAME. All rights reserved.
+              © {currentYear} اکتیو لجندز. تمامی حقوق محفوظ است.
             </p>
             <div className="flex items-center">
               <p className="text-light-dark text-sm">
-                Made with <Heart className="inline-block h-4 w-4 text-primary mx-1" /> by Game Studio
+                ساخته شده با <Heart className="inline-block h-4 w-4 text-primary mx-1" /> توسط تیم ما
               </p>
               <span className="mx-2 text-dark-lighter">|</span>
               <p className="text-light-dark text-sm flex items-center">
-                Powered by <Gamepad2 className="inline-block h-4 w-4 text-primary mx-1" /> Game Engine
+                قدرت گرفته از <Gamepad2 className="inline-block h-4 w-4 text-primary mx-1" /> موتور بازی‌سازی
               </p>
             </div>
           </div>
